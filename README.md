@@ -18,7 +18,7 @@ $ npm install -g rscli2
 $ rscli COMMAND
 running command...
 $ rscli (-v|--version|version)
-rscli2/1.0.1 darwin-x64 node-v10.16.0
+rscli2/1.0.2 darwin-x64 node-v10.16.0
 $ rscli --help [COMMAND]
 USAGE
   $ rscli COMMAND
@@ -27,16 +27,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rscli add [COMPONENT]`](#rscli-add-file)
+* [`rscli add [FILE]`](#rscli-add-file)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
-## `rscli add [COMPONENT]`
+## `rscli add [FILE]`
 
 Add a react component to your project
 
 ```
 USAGE
-  $ rscli add [COMPONENT]
+  $ rscli add [FILE]
 
 OPTIONS
   -f, --format=format  TypeScript (tsx) or JavaScript (jsx)
@@ -47,7 +47,7 @@ OPTIONS
   -t, --type=type      Page or Component
 ```
 
-_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.1/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.2/src/commands/add.ts)_
 
 ## `rscli help [COMMAND]`
 
