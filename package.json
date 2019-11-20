@@ -45,7 +45,8 @@
   ],
   "homepage": "https://github.com/michaeldoye/rscli",
   "keywords": [
-    "oclif"
+    "React",
+    "CLI"
   ],
   "license": "MIT",
   "main": "lib/index.js",
