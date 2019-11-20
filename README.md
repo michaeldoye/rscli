@@ -27,7 +27,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rscli add [FILE]`](#rscli-hello-file)
+* [`rscli add [COMPONENT]`](#rscli-hello-file)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
 ## `rscli add`
