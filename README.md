@@ -30,13 +30,13 @@ USAGE
 * [`rscli add [COMPONENT]`](#rscli-add-file)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
-## `rscli add [FILE]`
+## `rscli add [COMPONENT]`
 
 Add a react component to your project
 
 ```
 USAGE
-  $ rscli add [FILE]
+  $ rscli add [COMPONENT]
 
 OPTIONS
   -f, --format=format  TypeScript (tsx) or JavaScript (jsx)
