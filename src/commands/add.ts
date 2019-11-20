@@ -44,11 +44,11 @@ export default class Add extends Command {
 
     Promise.all(
       files.map(async file => {
-        if (fse.existsSync(`${path}/${name}.${file.format}`)) {
+        if (fse.existsSync(`${path}/${name}/${name}.${file.format}`)) {
           throw new Error(`${path}/${name} already exists`)
         }
         await fse.outputFile(
-          `${path}/${name}.${file.format}`,
+          `${path}/${name}/${name}.${file.format}`,
           getTemplateByType({name, format: file.format, type, fileType: file.type})
         )
       })
