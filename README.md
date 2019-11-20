@@ -18,7 +18,7 @@ $ npm install -g rscli
 $ rscli COMMAND
 running command...
 $ rscli (-v|--version|version)
-rscli/0.0.0 darwin-x64 node-v10.16.0
+rscli/1.0.0 darwin-x64 node-v10.16.0
 $ rscli --help [COMMAND]
 USAGE
   $ rscli COMMAND
@@ -27,30 +27,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rscli add [COMPONENT]`](#rscli-hello-file)
+* [`rscli add [FILE]`](#rscli-add-file)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
-## `rscli add`
+## `rscli add [FILE]`
 
-Generates a React Function Component at the given path including test file and css file
+Add a react component to your project
 
 ```
 USAGE
-  $ rscli add [PATH] [NAME] [TYPE] [FORMAT] [STYLE]
+  $ rscli add [FILE]
 
 OPTIONS
-  -h, --help                 show CLI help
-  -p, --path=path/to/comps   path to components folder (default: src/components)   
-  -n, --name=componentName   name of the component to be created (default: NewFeature)
-  -t, --type=componentType   Page or Component (default: component)
-  -s, --style=CSSType        SCSS or CSS (default: SCSS)
-  -f, --format=formatType    tsx or jsx (default: tsx)
-
-EXAMPLE
-  $ rscli add --path=src/components --name=CoolFeature --format=jsx --style=css
+  -f, --format=format  TypeScript (tsx) or JavaScript (jsx)
+  -h, --help           show CLI help
+  -n, --name=name      Component Name
+  -p, --path=path      Path to components folder
+  -s, --style=style    SASS or CSS
+  -t, --type=type      Page or Component
 ```
 
-_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v0.0.0/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.0/src/commands/add.ts)_
 
 ## `rscli help [COMMAND]`
 
@@ -67,4 +64,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 <!-- commandsstop -->
