@@ -27,16 +27,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rscli add [FILE]`](#rscli-add-file)
+* [`rscli add [COMPONENT]`](#rscli-add-file)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
-## `rscli add [FILE]`
+## `rscli add [COMPONENT]`
 
 Add a react component to your project
 
 ```
 USAGE
-  $ rscli add [FILE]
+  $ rscli add [COMPONENT]
 
 OPTIONS
   -f, --format=format  TypeScript (tsx) or JavaScript (jsx)
@@ -47,7 +47,7 @@ OPTIONS
   -t, --type=type      Page or Component
 ```
 
-_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.2/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.1/src/commands/add.ts)_
 
 ## `rscli help [COMMAND]`
 
