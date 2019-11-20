@@ -27,7 +27,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rscli add [FILE]`](#rscli-add-file)
+* [`rscli add [COMPONENT]`](#rscli-add-file)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
 ## `rscli add [FILE]`
