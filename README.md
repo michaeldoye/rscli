@@ -18,7 +18,7 @@ $ npm install -g rscli2
 $ rscli COMMAND
 running command...
 $ rscli (-v|--version|version)
-rscli2/1.0.2 darwin-x64 node-v10.16.0
+rscli2/1.0.3 darwin-x64 node-v10.16.0
 $ rscli --help [COMMAND]
 USAGE
   $ rscli COMMAND
@@ -27,7 +27,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rscli add [COMPONENT]`](#rscli-add-file)
+* [`rscli add [COMPONENT]`](#rscli-add-component)
 * [`rscli help [COMMAND]`](#rscli-help-command)
 
 ## `rscli add [COMPONENT]`
@@ -39,15 +39,15 @@ USAGE
   $ rscli add [COMPONENT]
 
 OPTIONS
-  -f, --format=format  TypeScript (tsx) or JavaScript (jsx)
+  -f, --format=format  TypeScript (tsx) or JavaScript (jsx), (default: tsx)
   -h, --help           show CLI help
-  -n, --name=name      Component Name
-  -p, --path=path      Path to components folder
-  -s, --style=style    SASS or CSS
-  -t, --type=type      Page or Component
+  -n, --name=name      Component Name, (default: NewFeature)
+  -p, --path=path      Path to components folder, (default: src/components)
+  -s, --style=style    SASS or CSS, (default: sass)
+  -t, --type=type      Page or Component, (default: component)
 ```
 
-_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.1/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/michaeldoye/rscli/blob/v1.0.3/src/commands/add.ts)_
 
 ## `rscli help [COMMAND]`
 
