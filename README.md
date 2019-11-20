@@ -18,7 +18,7 @@ $ npm install -g rscli2
 $ rscli COMMAND
 running command...
 $ rscli (-v|--version|version)
-rscli2/1.0.0 darwin-x64 node-v10.16.0
+rscli2/1.0.1 darwin-x64 node-v10.16.0
 $ rscli --help [COMMAND]
 USAGE
   $ rscli COMMAND
@@ -47,7 +47,7 @@ OPTIONS
   -t, --type=type      Page or Component
 ```
 
-_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.0/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/mdoye/rscli/blob/v1.0.1/src/commands/add.ts)_
 
 ## `rscli help [COMMAND]`
 
@@ -63,4 +63,6 @@ ARGUMENTS
 OPTIONS
   --all  see all commands in CLI
 ```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 <!-- commandsstop -->
