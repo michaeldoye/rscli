@@ -2,11 +2,11 @@
   "name": "rscli2",
   "description": "Simple React CLI",
   "version": "1.0.2",
-  "author": "Michael Doye @mdoye",
+  "author": "Michael Doye @michaeldoye",
   "bin": {
     "rscli": "./bin/run"
   },
-  "bugs": "https://github.com/mdoye/rscli/issues",
+  "bugs": "https://github.com/michaeldoye/rscli/issues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
@@ -43,7 +43,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/mdoye/rscli",
+  "homepage": "https://github.com/michaeldoye/rscli",
   "keywords": [
     "oclif"
   ],
@@ -56,7 +56,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "mdoye/rscli",
+  "repository": "michaeldoye/rscli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",

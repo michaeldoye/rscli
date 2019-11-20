@@ -9,23 +9,23 @@ export default class Add extends Command {
 
   static flags = {
     // flag with a value (-s, --style=VALUE)
-    type: flags.string({char: 't', description: 'Page or Component'}),
+    type: flags.string({char: 't', description: 'Page or Component, (default: component)'}),
     // flag with a value (-t, --type=VALUE)
     format: flags.string({
       char: 'f',
-      description: 'TypeScript (tsx) or JavaScript (jsx)'
+      description: 'TypeScript (tsx) or JavaScript (jsx), (default: tsx)'
     }),
     // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: 'Component Name'}),
+    name: flags.string({char: 'n', description: 'Component Name, (default: NewFeature)'}),
     // flag with a value (-s, --style=VALUE)
-    style: flags.string({char: 's', description: 'SASS or CSS'}),
+    style: flags.string({char: 's', description: 'SASS or CSS, (default: sass)'}),
     // flag with a value (-s, --style=VALUE)
-    path: flags.string({char: 'p', description: 'Path to components folder'}),
+    path: flags.string({char: 'p', description: 'Path to components folder, (default: src/components)'}),
     // flag with no value (-h, --help)
     help: flags.help({char: 'h'}),
   }
 
-  static args = [{name: 'file'}]
+  static args = [{name: 'component'}]
 
   async run() {
     const {flags} = this.parse(Add)
