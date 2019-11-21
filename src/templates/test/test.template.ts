@@ -4,7 +4,7 @@ export const specTemplate = (opts: Opts): string => {
   return `import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import { unmountComponentAtNode } from 'react-dom';
-import { ${opts.name}${capitalize(opts.type)} } from './${opts.name}';
+import ${opts.name}${capitalize(opts.type)} from './${opts.name}';
 
 describe('${opts.name}${capitalize(opts.type)}', () => {
   let container${opts.format === 'spec.tsx' ? ': any;' : ';'}
