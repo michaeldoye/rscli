@@ -3,8 +3,8 @@ rscli
 
 Simple React CLI
 
-[![Version](https://img.shields.io/npm/v/rscli.svg)](https://npmjs.org/package/rscli2)
-[![Downloads/week](https://img.shields.io/npm/dw/rscli.svg)](https://npmjs.org/package/rscli2)
+[![Version](https://img.shields.io/npm/v/rscli2.svg)](https://npmjs.org/package/rscli2)
+[![Downloads/week](https://img.shields.io/npm/dw/rscli2.svg)](https://npmjs.org/package/rscli2)
 [![License](https://img.shields.io/npm/l/rscli2.svg)](https://github.com/mdoye/rscli/blob/master/package.json)
 
 <!-- toc -->

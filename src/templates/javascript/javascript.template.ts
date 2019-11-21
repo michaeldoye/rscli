@@ -1,11 +1,9 @@
 import {capitalize, deCapitalize, Opts} from '../helpers'
 
-export const typeScriptTemplate = (opts: Opts): string => {
+export const javaScriptTemplate = (opts: Opts): string => {
   return `import React from 'react';
 
-interface ${opts.name}${capitalize(opts.type)}Props {}
-
-export const ${opts.name}${capitalize(opts.type)}: React.FC<${opts.name}${capitalize(opts.type)}Props> = ({}) => {
+const ${opts.name}${capitalize(opts.type)} = ({}) => {
 
   return (
     <div className='${deCapitalize(opts.name)}-${opts.type}'>
@@ -13,5 +11,7 @@ export const ${opts.name}${capitalize(opts.type)}: React.FC<${opts.name}${capita
     </div>
   );
 };
+
+export default ${opts.name}${capitalize(opts.type)};
 `
 }

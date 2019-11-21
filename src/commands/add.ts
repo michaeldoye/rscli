@@ -38,6 +38,7 @@ export default class Add extends Command {
 
     const files = [
       {format: `${format}`, type: 'comp'},
+      {format: `${format}`, type: 'index'},
       {format: `${style}`, type: 'style'},
       {format: `spec.${format}`, type: 'spec'}
     ]
@@ -48,7 +49,7 @@ export default class Add extends Command {
           throw new Error(`${path}/${name} already exists`)
         }
         await fse.outputFile(
-          `${path}/${name}/${name}.${file.format}`,
+          `${path}/${name}/${file.type === 'index' ? 'index' : name}.${file.format}`,
           getTemplateByType({name, format: file.format, type, fileType: file.type})
         )
       })
