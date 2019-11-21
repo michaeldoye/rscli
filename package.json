@@ -1,7 +1,7 @@
 {
   "name": "rscli2",
   "description": "Simple React CLI",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Michael Doye @michaeldoye",
   "bin": {
     "rscli": "./bin/run"
